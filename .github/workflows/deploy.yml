@@ -11,16 +11,16 @@ jobs:
     steps:
       - name: Test1
         run: |
-        ls
-        pwd
+          ls
+          pwd
 
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
 
       - name: Test2
         run: |
-        ls
-        pwd
+          ls
+          pwd
 
       - name: Node 설치
         uses: actions/setup-node@v4
@@ -36,8 +36,8 @@ jobs:
 
       - name: Test3
         run: |
-        ls
-        cat .env
+          ls
+          cat .env
 
       - name: 테스트 코드 실행
         run: npm run test
